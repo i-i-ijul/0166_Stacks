@@ -70,10 +70,18 @@ public:
     //isempty operation: check if the stack is empty
     bool isEmpty()
     {
-        
+        return top == NULL; //return true if the top pointer is null
     }
 };
 
 int main()
 {
+    Stack stack;
+    int choice = 0;
+    int value;
+
+    while (choice != 5)
+    {
+        
+    }
 }
