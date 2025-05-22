@@ -96,6 +96,7 @@ int main()
             cin >> value;
             stack.push(value); //push the entered value onto the stack
             break;
+        
         }
     }
 }
