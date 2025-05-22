@@ -50,7 +50,7 @@ public:
         cout << "Popped Value: " << top->data << endl;
     }
 
-    //peek/top operation: retrieve the value of the topmost element without removing
+    // peek/top operation: retrieve the value of the topmost element without removing
     void peek()
     {
         if (top = NULL)
@@ -63,14 +63,14 @@ public:
             while (current != NULL)
             {
                 cout << endl;
-            } //return the value of the top node
+            } // return the value of the top node
         }
     }
 
-    //isempty operation: check if the stack is empty
+    // isempty operation: check if the stack is empty
     bool isEmpty()
     {
-        return top == NULL; //return true if the top pointer is null
+        return top == NULL; // return true if the top pointer is null
     }
 };
 
@@ -91,12 +91,25 @@ int main()
 
         switch (choice)
         {
-            case 1:
+        case 1:
             cout << "enter the value to push: ";
             cin >> value;
-            stack.push(value); //push the entered value onto the stack
+            stack.push(value); // push the entered value onto the stack
             break;
+        case 2:
+            if (stack.isEmpty())
+            {
+                stack.pop(); // pop the top element from the stack
+            }
+            else
+            {
+                cout << "stack is empty, cannot pop." << endl;
+            }
+            break;
+        case 3:
+            if (!stack.isEmpty())
+            {
+            }
         }
-        
     }
 }
