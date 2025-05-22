@@ -109,6 +109,7 @@ int main()
         case 3:
             if (!stack.isEmpty())
             {
+                
             }
         }
     }
